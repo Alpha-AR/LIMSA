@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image1"
+    tools:context=".Faculty">
+
+    <TextView
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+
+        android:background="#C6FFFFFF"
+        android:ems="10"
+        android:text=" To: Mrs. Leena Ragha"
+        android:textColor="#D9000000"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/itemId"
+        android:layout_width="170dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="32dp"
+        android:background="#C6FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+
+        android:text="1001"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName6" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:background="#C6FFFFFF"
+
+        android:text=" ItemID:"
+
+        android:textColor="#B3000000"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/itemId"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+
+    <EditText
+        android:id="@+id/para"
+        android:layout_width="352dp"
+        android:layout_height="483dp"
+        android:ems="10"
+
+        android:background="#C6FFFFFF"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="COMPOSE"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemId"
+        app:layout_constraintVertical_bias="0.205" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/para"
+        app:layout_constraintEnd_toEndOf="@+id/para"
+        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.987"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
